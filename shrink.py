@@ -159,11 +159,11 @@ def getSeamResult(img,S1,S2):
 					B[i][j] = B[i + 1][j]
 	return out
 
-name = "ball.jpg"
+name = "1.jpg"
 img = cv2.imread("source/" + name)
 SaveImg = copy.deepcopy(img)
 
-tRow,tColumn = 300,130
+tRow,tColumn = 280,60
 
 S1 = []
 for tot in range(0,tRow):
