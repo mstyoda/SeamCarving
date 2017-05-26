@@ -87,11 +87,11 @@ def amp_Row(img,R,Er):
 		for j in range(0,m):
 			if j != R[i]:
 				out[i][k] = img[i][j]
-				nEr[i][k] = Er[i][j]
+				nEr[i][k] = Er[i][j] - 1
 				k = k + 1
 			else:
 				out[i][k] = out[i][k + 1] = img[i][j]
-				nEr[i][k] = nEr[i][k + 1] = Er[i][j] +  1e+5 
+				nEr[i][k] = nEr[i][k + 1] = Er[i][j] - 1 +  1e+2 
 				k = k + 2
 	return (out,nEr)
 
@@ -104,18 +104,18 @@ def amp_Column(img,C,Ec):
 		for i in range(0,n):
 			if i != C[j]:
 				out[k][j] = img[i][j]
-				nEc[k][j] = Ec[i][j]
+				nEc[k][j] = Ec[i][j] - 1
 				k = k + 1
 			else:
 				out[k][j] = out[k + 1][j] = img[i][j]
-				nEc[k][j] = nEc[k + 1][j] = Ec[i][j] + 1e+5
+				nEc[k][j] = nEc[k + 1][j] = Ec[i][j] - 1 + 1e+2
 				k = k + 2
 	return (out,nEc)
 
-name = "x23(2).jpg"
+name = "6.jpg"
 img = cv2.imread("source/" + name)
 
-tRow,tColumn = 100,0
+tRow,tColumn = 150,100
 Er = np.zeros((img.shape[0],img.shape[1]))
 for i in range(0,tRow):
 	R = get_Row(getE_Sobel(img),Er)

@@ -1,0 +1,3 @@
+/home/mstyoda/桌面/CV/amplify/CMakeFiles/rebuild_cache.dir
+/home/mstyoda/桌面/CV/amplify/CMakeFiles/edit_cache.dir
+/home/mstyoda/桌面/CV/amplify/CMakeFiles/amplify.dir
