@@ -1,0 +1,8 @@
+source/1.jpg
+result/Laplacian_remove_1.jpg
+seam_result/Laplacian_remove_1.jpg
+1
+1
+Laplacian
+0.05 0.1 0.74 0.835
+0.5 0.6 0.4 0.6

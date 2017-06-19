@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mstyoda/桌面/CV/seamCarving/SeamCarving/cpp_version/all/work.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+string
+-
+cstdlib
+-
+cstring
+-
+set
+-
+vector
+-
+map
+-
+cmath
+-
+ctime
+-
+
